@@ -1,5 +1,5 @@
 import ampq from "amqplib";
-import { Config } from "./config";
+import { Config } from "./config/index.js";
 
 export class Producer {
   channel;
