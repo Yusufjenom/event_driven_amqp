@@ -1,0 +1,6 @@
+step 1: connect to the rabbitmq server
+step 2: create a new channel
+step 3: create the exchange
+step 4: create the queue
+step 5: bind thee queue to thee exchange
+step 6: consume messages from the queue
