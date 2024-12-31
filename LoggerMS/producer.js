@@ -6,12 +6,12 @@ export class Producer {
 
   async createChannel() {
     const connection = await ampq.connect(Config.rabbitMQ.url);
-    this.channel = connection.createChannel();
+    this.channel = await connection.createChannel();
   }
 
   async publishMessage(routingKey, message) {
     if (!this.channel) {
-      this.createChannel();
+      await this.createChannel();
     }
 
     await this.channel.assertExchange(Config.rabbitMQ.exchangeName, "direct");
