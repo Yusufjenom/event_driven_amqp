@@ -3,4 +3,5 @@ export const Config = {
     url: "amqp://localhost",
     exchangeName: "logExchange",
   },
+  port: 8000,
 };
