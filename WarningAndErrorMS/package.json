@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "amqplib": "^0.10.5"
+  },
+  "name": "warninganderrorms",
+  "version": "1.0.0",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
